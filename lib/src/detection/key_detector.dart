@@ -13,7 +13,6 @@ class KeyScore {
 class KeyDetector {
   final List<double> noteCounts = List.filled(12, 0.0);
   final List<_NoteEvent> _history = [];
-  final List<String> _appearanceOrder = [];
   static const int _windowMs = 30000;
   static const int _maxEvents = 300;
 
@@ -33,7 +32,6 @@ class KeyDetector {
   void reset() {
     noteCounts.fillRange(0, 12, 0.0);
     _history.clear();
-    _appearanceOrder.clear();
   }
 
   void _prune() {
@@ -58,24 +56,7 @@ class KeyDetector {
       scores.add(_scoreKey(root, false));
     }
     scores.sort((a, b) => b.score.compareTo(a.score));
-    final top = scores.take(count).toList();
-
-    for (final s in top) {
-      if (!_appearanceOrder.contains(s.label)) {
-        _appearanceOrder.add(s.label);
-      }
-    }
-
-    top.sort((a, b) {
-      final aIdx = _appearanceOrder.indexOf(a.label);
-      final bIdx = _appearanceOrder.indexOf(b.label);
-      if (aIdx == -1 && bIdx == -1) return 0;
-      if (aIdx == -1) return 1;
-      if (bIdx == -1) return -1;
-      return aIdx.compareTo(bIdx);
-    });
-
-    return top;
+    return scores.take(count).toList();
   }
 
   KeyScore _scoreKey(int root, bool isMajor) {
