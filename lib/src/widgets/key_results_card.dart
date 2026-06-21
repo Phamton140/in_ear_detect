@@ -15,6 +15,7 @@ class KeyResultsCard extends StatelessWidget {
     [Color(0xFF66DDFF), Color(0xFF4488CC)],
     [Color(0xFF66DD99), Color(0xFF44AA77)],
     [Color(0xFFDD8866), Color(0xFFCC6644)],
+    [Color(0xFFBB88EE), Color(0xFF8844CC)],
   ];
 
   @override
@@ -61,7 +62,7 @@ class KeyResultsCard extends StatelessWidget {
               final s = scores[i];
               final maxScore = scores.first.score;
               final pct = maxScore > 0 ? (s.score / maxScore * 100) : 0.0;
-              final colors = _barColors[i.clamp(0, 2)];
+              final colors = _barColors[i.clamp(0, 3)];
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Row(

@@ -190,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final topKeys = _key.computeTopKeys(3);
+    final topKeys = _key.computeTopKeys(4);
 
     return Scaffold(
       backgroundColor: const Color(0xFF0D0D1A),
