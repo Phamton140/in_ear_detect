@@ -1,0 +1,1 @@
+Detect musical notes and keys in real time using your microphone.

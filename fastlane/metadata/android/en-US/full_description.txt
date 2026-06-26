@@ -1,0 +1,12 @@
+in ear detect is a musical app that lets you identify notes and keys in real time using your device's microphone.
+
+Main features:
+• Real-time musical note detection.
+• Chromatic indicator with detected notes.
+• Suggested most likely keys.
+• Recent note history.
+• Dark, modern, and easy-to-use interface.
+
+Perfect for musicians, students, or anyone who wants to practice ear training. The app processes audio locally and does not send data to external servers.
+
+Developer: Melquisedec Sarfeliz.

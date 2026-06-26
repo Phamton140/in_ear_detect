@@ -247,7 +247,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Row(
         children: [
           const Text(
-            '◈ KeyDetect',
+            '◈ in ear detect',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600,
