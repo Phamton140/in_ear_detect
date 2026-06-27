@@ -1,0 +1,12 @@
+in ear detect es una aplicación musical que te permite identificar notas y tonalidades en tiempo real usando el micrófono de tu dispositivo.
+
+Características principales:
+• Detección de notas musicales en tiempo real.
+• Indicador cromático con las notas detectadas.
+• Sugerencia de las tonalidades más probables.
+• Historial de notas recientes.
+• Interfaz oscura, moderna y fácil de usar.
+
+Ideal para músicos, estudiantes y cualquier persona que quiera entrenar su oído de forma práctica. La app procesa el audio de forma local, sin enviar datos a servidores externos.
+
+Desarrollador: Melquisedec Sarfeliz.

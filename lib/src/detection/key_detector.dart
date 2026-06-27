@@ -48,7 +48,7 @@ class KeyDetector {
     }
   }
 
-  List<KeyScore> computeTopKeys([int count = 3]) {
+  List<KeyScore> computeTopKeys([int count = 4]) {
     if (_history.length < 2) return [];
     final scores = <KeyScore>[];
     for (int root = 0; root < 12; root++) {

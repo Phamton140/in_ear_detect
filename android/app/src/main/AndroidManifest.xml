@@ -3,9 +3,15 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:label="in_ear_detect"
+        android:label="in ear detect"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+        <!-- AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8257738486901222~8637634968" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

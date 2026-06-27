@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'src/screens/home_screen.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const KeyDetectApp());
+  await MobileAds.instance.initialize();
+  runApp(const InEarDetectApp());
 }
 
-class KeyDetectApp extends StatelessWidget {
-  const KeyDetectApp({super.key});
+class InEarDetectApp extends StatelessWidget {
+  const InEarDetectApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'KeyDetect',
+      title: 'in ear detect',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color(0xFF0D0D1A),

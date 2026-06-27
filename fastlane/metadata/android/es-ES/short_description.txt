@@ -1,0 +1,1 @@
+Detecta notas y tonalidades musicales en tiempo real con tu micrófono.
