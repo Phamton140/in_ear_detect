@@ -1,4 +1,4 @@
-package com.keystudio.in_ear_detect
+package com.dreamsoftgroup.ineardetect
 
 import io.flutter.embedding.android.FlutterActivity
 

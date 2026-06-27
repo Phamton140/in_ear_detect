@@ -8,6 +8,7 @@ import '../widgets/note_display.dart';
 import '../widgets/chromatic_indicator.dart';
 import '../widgets/key_results_card.dart';
 import '../widgets/note_history_row.dart';
+import '../widgets/ad_banner.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -230,6 +231,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             _buildStatusBar(),
+            const AdBanner(),
           ],
         ),
       ),

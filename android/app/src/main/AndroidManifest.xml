@@ -6,6 +6,12 @@
         android:label="in ear detect"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+        <!-- AdMob App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8257738486901222~8637634968" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
